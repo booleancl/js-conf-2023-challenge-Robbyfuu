@@ -20,8 +20,11 @@
 function filter(array, callback){
   var arrayLength = array.length;
 	var newArray = [];
-
-
+  for (var i = 0; i < arrayLength; i++) {
+    if (callback(array[i], i, array)) {
+      newArray.push(array[i]);
+    }
+  }
   return newArray;
 }
 
