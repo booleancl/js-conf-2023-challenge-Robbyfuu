@@ -27,7 +27,8 @@
 
 function map(array, callback){
   // Tu código acá:
-
+  return array.map(callback);
+  
 }
 
 module.exports = {
